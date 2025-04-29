@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: hsl(212, 6%, 44%);
+}
+
+body {
+  background-color: var(--primary-color);
+  font-size: .9375rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.wrapper {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1.9rem;
+  min-height: 100dvh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  width: min(100%, 31.5625rem);
+}
+
+.tech-info {
+  font-size: clamp(1.4rem, 1.1887rem + .9014vw, 2rem);
+  font-weight: 200;
+
+}
+
+.technology {
+  font-size: clamp(1.4rem, 1.1887rem + .9014vw, 2rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.data {
+  color: var(--primary-color);
+  font-size: .9375rem;
+  text-align: center;
+}
+
+.flex-container,
+.merge-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width:60rem) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .merge-sections {
+    flex-shrink: 0;
+  }
+
+  .flex-card {
+    max-width: 22.875rem;
+  }
+
+}
+
+.flex-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15.625rem;
+  width: 100%;
+  padding: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem .75rem rgb(211, 211, 211);
+}
+
+.section-info {
+  color: var(--primary-color);
+  line-height: 1.4;
+}
+
+.supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.icons {
+  width: min(100%, 2.8125rem);
+  align-self: flex-end;
+}
+  
+
+  
+
+
+
+
+
